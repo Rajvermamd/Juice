@@ -1,0 +1,154 @@
+2024-10-16T07:30:16+00:00 ERROR API error: Array
+(
+    [url] => https://paypalconnect.paymentplugins.com/v1/status
+    [method] => POST
+    [http_status] => 404
+    [request] => Array
+(
+    [trackingId] => IM9gij4ZPG3odxdyDUsoEGss9051yaWn
+    [environment] => production
+)
+
+    [error] => Array
+        (
+            [name] => RESOURCE_NOT_FOUND_ERROR
+            [debug_id] => d874fb708cd7b
+        )
+
+)
+2024-10-16T10:22:50+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => Raj
+                    [surname] => Verma
+                )
+
+            [address] => Array
+                (
+                    [address_line_1] => 175 3rd floor
+                    [address_line_2] => yytrytuyt
+                    [admin_area_1] => DL
+                    [admin_area_2] => Delhi
+                    [postal_code] => 110044
+                    [country_code] => IN
+                )
+
+            [email_address] => pappu.developer@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 30.00
+                            [currency_code] => USD
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => USD
+                                            [value] => 30.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => USD
+                                            [value] => 0
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => USD
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => USD
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => USD
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Bar S – Classic Bun Length Franks
+                                    [quantity] => 1
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => USD
+                                            [value] => 30.00
+                                        )
+
+                                    [sku] => 61
+                                    [description] => Product ID: 61
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => NO_SHIPPING
+            [return_url] => http://ecomerceweb.local/wc-api/ppcp_checkout_return/?_checkoutnonce=3d57ba2228
+            [cancel_url] => http://ecomerceweb.local/checkout/
+            [brand_name] => Ecomerceweb
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [field] => /purchase_units/@reference_id=='default'/payee
+                            [location] => body
+                            [issue] => PAYEE_ACCOUNT_RESTRICTED
+                            [description] => The merchant account is restricted.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => 3166771472959
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-PAYEE_ACCOUNT_RESTRICTED
+                            [rel] => information_link
+                            [method] => GET
+                        )
+
+                )
+
+        )
+
+)

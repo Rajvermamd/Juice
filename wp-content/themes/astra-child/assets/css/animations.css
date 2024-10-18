@@ -1,0 +1,65 @@
+
+
+/* ==== TEXT ANIMATION ==== */
+
+@keyframes text1 {
+    0%   {
+        background: -webkit-linear-gradient(0deg, rgb(0, 41, 255) 0%, rgba(0,42,254,1) 15%, rgba(238,34,150,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+         background: -webkit-linear-gradient(0deg, rgba(236,149,206,1) 0%, rgba(224,75,176,1) 55%, rgba(244,71,165,1) 100%);
+         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  }
+
+
+/* ============ ANIMATIONS ============== */
+@keyframes change{
+    0%{
+        background-image: url('../images/project-dev-1.png');
+    }
+    50%{
+        background-image: url('../images/project-dev-2.png');
+    }
+
+    100%{
+        background-image: url('../images/project-dev-3.png');
+    }
+}
+
+@keyframes technology{
+    0%{
+        background-image: url('../images/technology-img-1.png');
+    }
+
+    100%{
+        background-image: url('../images/technology-img-2.png');
+    }
+}
+
+@keyframes impactcreation{
+    0%{
+        background-image: url('../images/impact-creation-1.png');
+    }
+    50%{
+        background-image: url('../images/impact-creation-2.png');
+    }
+
+    100%{
+        background-image: url('../images/impact-creation-3.png');
+    }
+}
+
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+    0% {
+      transform: translateX(-60%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
